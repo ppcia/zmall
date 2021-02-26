@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery.js"></script>
+</head>
+
+<body>
+    <!-- 顶部导航 -->
+    <div class="topbar">
+        <div class="wrap-lg">
+            <div class="wrap-lg clearfix">
+                <div class="topbar-left">
+                    <div class="subnav">
+                        <a href="#">中兴官网</a>
+                        <a href="#">消费者业务</a>
+                        <a href="#">运营商业务</a>
+                        <a href="#">企业业务</a>
+                    </div>
+                </div>
+                <div class="topbar-right">
+                    <div class="small_signin">
+                        <a href="./login.html">登录</a>
+                        <a href="./register.html">注册</a>
+                        <a href="#" class="m-qrcode">
+                            手机商城
+                            <i></i>
+                            <div class="qrcode-show"><img src="./images/qrcode.png" alt="">用手机扫一扫</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 头部信息栏 -->
+    <div class="header">
+        <div class="wrap-lg">
+            <div class="row clearfix">
+                <div class="col-lg-4">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="./images/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="searchbar">
+                        <form action="#" method="POST" id="goods_search" class="clearfix">
+                            <input type="text" class="x-input">
+                            <a href="javascript:void(0);" class="btn btn-search">搜索</a>
+                        </form>
+                        <div class="hots">
+                            <span>热门关键词：</span>
+                            <a href="./item.html?item_id=124"> Axon 20</a>
+                            <a href="./item.html?item_id=103"> Axon 11 SE 5G</a>
+                            <a href="./item.html?item_id=153"> Axon 11 5G</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="minicart">
+                        <a href="./cart.html" class="btn btn-lg">
+                            <span>
+                                <i class="icon-cart-a">
+                                <b class="cart-number">0</b>
+                                </i>查看购物车
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页面导航栏 -->
+    <div class="nav">
+        <div class="wrap-lg">
+            <div class="row clearfix">
+                <div class="nav-left">
+                    <div class="category_handle">
+                        <div class="big-cate">
+                            <a href="#">全部商品分类</a>
+                        </div>
+                        <div id="category" class="category">
+                            <ul class="category-primary">
+                                <li>
+                                    <div class="category-primary-item">
+                                        <a href="./list.html?cart_name=智能手机"><span
+                                                class="item-logo"><img src="./images/category-item1.jpg"
+                                                    alt=""></span>智能手机</a>
+                                        <span class="icon icon-arrow-right active-arrow"></span>
+                                    </div>
+                                    <div class="category-sub">
+                                        <div class="category-sub-adv">
+                                            <a href="./item.html?item_id=171">
+                                                <img src="./images/adv1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="category-sub-item">
+                                            <a href="./list.html?cart_name=Axon系列">
+                                                <div class="category-sub-title">
+                                                    <div class="category-sub-left"></div>
+                                                    <div class="category-sub-center">Axon系列</div>
+                                                    <div class="category-sub-right"></div>
+                                                </div>
+                                            </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="./item.html?item_id=124">
+                                                        <div class="sub-img">
+                                                            <img src="./images/a1.jpg"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">中兴天机Axon20 5G</h4>
+                                                            <div class="sub-subtitle">屏下摄像手机</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./item.html?item_id=4">
+                                                        <div class="sub-img">
+                                                            <img src="./images/a2.jpg"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">天机Axon 10 Pro 5G</h4>
+                                                            <div class="sub-subtitle">5G先锋 唯快不破</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="category-sub-item">
+                                            <a href="./list.html?cart_name=Blade系列">
+                                                <div class="category-sub-title">
+                                                    <div class="category-sub-left"></div>
+                                                    <div class="category-sub-center">Blade系列</div>
+                                                    <div class="category-sub-right"></div>
+                                                </div>
+                                            </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="./item.html?item_id=128">
+                                                        <div class="sub-img">
+                                                            <img src="./images/a3.jpg"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">V2020Smart</h4>
+                                                            <div class="sub-subtitle">大电量 大存储 大屏幕 高清四摄</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./item.html?item_id=153">
+                                                        <div class="sub-img">
+                                                            <img src="./images/a4.jpg"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">V2020 5G</h4>
+                                                            <div class="sub-subtitle">趣拍生活 快享5G</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./item.html?item_id=166">
+                                                        <div class="sub-img">
+                                                            <img src="./images/a5.jpg"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">V2021 5G 时光机</h4>
+                                                            <div class="sub-subtitle">专属长辈，远程控制</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="category-sub-item">
+                                            <a href="./list.html?cart_name=其他">
+                                                <div class="category-sub-title">
+                                                    <div class="category-sub-left"></div>
+                                                    <div class="category-sub-center">其他</div>
+                                                    <div class="category-sub-right"></div>
+                                                </div>
+                                            </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="./item.html?item_id=91">
+                                                        <div class="sub-img">
+                                                            <img src="./images/a6.jpg"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">红魔 5G</h4>
+                                                            <div class="sub-subtitle">5G游戏手机</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="category-primary-item">
+                                        <a href="./list.html?cart_name=智能终端"><span
+                                                class="item-logo"><img src="./images/category-item2.jpg"
+                                                    alt=""></span>智能终端</a>
+                                        <span class="icon icon-arrow-right active-arrow"></span>
+                                    </div>
+                                    <div class="category-sub">
+                                        <div class="category-sub-item">
+                                            <a href="./list.html?cart_name=智能穿戴">
+                                                <div class="category-sub-title">
+                                                    <div class="category-sub-left"></div>
+                                                    <div class="category-sub-center">智能穿戴</div>
+                                                    <div class="category-sub-right"></div>
+                                                </div>
+                                            </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="./item.html?item_id=136">
+                                                        <div class="sub-img">
+                                                            <img src="./images/b1.jpg"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">nubia watch</h4>
+                                                            <div class="sub-subtitle">刚柔并济，表现不凡</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./item.html?item_id=164">
+                                                        <div class="sub-img">
+                                                            <img src="./images/b2.jpg"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">ZTE WATCH Live</h4>
+                                                            <div class="sub-subtitle">21天持久续航、全天心率监测</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="category-sub-item">
+                                            <a href="./list.html?cart_name=网络/路由">
+                                                <div class="category-sub-title">
+                                                    <div class="category-sub-left"></div>
+                                                    <div class="category-sub-center">网络/路由</div>
+                                                    <div class="category-sub-right"></div>
+                                                </div>
+                                            </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="./item.html?item_id=10">
+                                                        <div class="sub-img">
+                                                            <img src="./images/b3.jpg"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">分布式路由</h4>
+                                                            <div class="sub-subtitle">穿墙王 覆盖无忧</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./item.html?item_id=14">
+                                                        <div class="sub-img">
+                                                            <img src="./images/b4.jpg"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">4G CPE</h4>
+                                                            <div class="sub-subtitle">4G室内无线路由器</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./item.html?item_id=13">
+                                                        <div class="sub-img">
+                                                            <img src="./images/b5.jpg"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">5G CPE</h4>
+                                                            <div class="sub-subtitle">X50平台、5G高速网络</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./item.html?item_id=12">
+                                                        <div class="sub-img">
+                                                            <img src="./images/b6.jpg"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">MF920U</h4>
+                                                            <div class="sub-subtitle">随身WIFI热点</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="category-sub-item">
+                                            <a href="./list.html?cart_name=智能家居">
+                                                <div class="category-sub-title">
+                                                    <div class="category-sub-left"></div>
+                                                    <div class="category-sub-center">智能家居</div>
+                                                    <div class="category-sub-right"></div>
+                                                </div>
+                                            </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="./item.html?item_id=38">
+                                                        <div class="sub-img">
+                                                            <img src="./images/b7.jpg"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">小兴看看Memo微光全彩版</h4>
+                                                            <div class="sub-subtitle">网络无线家庭监控</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./item.html?item_id=92">
+                                                        <div class="sub-img">
+                                                            <img src="./images/b8.png"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">努比亚 VR全景相机</h4>
+                                                            <div class="sub-subtitle"> 360°全景记录生活</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./item.html?item_id=106">
+                                                        <div class="sub-img">
+                                                            <img src="./images/b9.jpg"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">nubia neo智能声波电动牙刷</h4>
+                                                            <div class="sub-subtitle">清新从齿出发</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./item.html?item_id=107">
+                                                        <div class="sub-img">
+                                                            <img src="./images/b10.jpg"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">Nubia neo智能速干牙刷消毒器</h4>
+                                                            <div class="sub-subtitle">收纳 风干二合一</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="category-sub-item">
+                                            <a href="./list.html?cart_name=便携投影">
+                                                <div class="category-sub-title">
+                                                    <div class="category-sub-left"></div>
+                                                    <div class="category-sub-center">便携投影</div>
+                                                    <div class="category-sub-right"></div>
+                                                </div>
+                                            </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="./item.html?item_id=56">
+                                                        <div class="sub-img">
+                                                            <img src="./images/b11.jpg"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">ZTE中兴 Spro 2 智能微投</h4>
+                                                            <div class="sub-subtitle">小有所投 大有所想</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="category-sub-item">
+                                            <a href="./list.html?cart_name=电视盒子">
+                                                <div class="category-sub-title">
+                                                    <div class="category-sub-left"></div>
+                                                    <div class="category-sub-center">电视盒子</div>
+                                                    <div class="category-sub-right"></div>
+                                                </div>
+                                            </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="./item.html?item_id=35">
+                                                        <div class="sub-img">
+                                                            <img src="./images/b12.jpg"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">魅盒</h4>
+                                                            <div class="sub-subtitle">4K高清网络机顶盒</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="category-primary-item">
+                                        <a href="./list.html?cart_name=影音娱乐"><span
+                                                class="item-logo"><img src="./images/category-item3.jpg"
+                                                    alt=""></span>影音娱乐</a>
+                                        <span class="icon icon-arrow-right active-arrow"></span>
+                                    </div>
+                                    <div class="category-sub">
+                                        <div class="category-sub-item">
+                                            <a href="./list.html?cart_name=耳机">
+                                                <div class="category-sub-title">
+                                                    <div class="category-sub-left"></div>
+                                                    <div class="category-sub-center">耳机</div>
+                                                    <div class="category-sub-right"></div>
+                                                </div>
+                                            </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="./item.html?item_id=48">
+                                                        <div class="sub-img">
+                                                            <img src="./images/c1.jpg"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">律音耳机</h4>
+                                                            <div class="sub-subtitle">打造不将就听觉盛宴</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./item.html?item_id=165">
+                                                        <div class="sub-img">
+                                                            <img src="./images/c2.png"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">ZTE LiveBuds</h4>
+                                                            <div class="sub-subtitle">真无线蓝牙耳机</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="category-sub-item">
+                                            <a href="./list.html?cart_name=音箱">
+                                                <div class="category-sub-title">
+                                                    <div class="category-sub-left"></div>
+                                                    <div class="category-sub-center">音箱</div>
+                                                    <div class="category-sub-right"></div>
+                                                </div>
+                                            </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="./item.html?item_id=46">
+                                                        <div class="sub-img">
+                                                            <img src="./images/c3.png"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">红魔战鼓</h4>
+                                                            <div class="sub-subtitle">便携式户外防水</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./item.html?item_id=60">
+                                                        <div class="sub-img">
+                                                            <img src="./images/c4.jpg"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">蘑菇蓝牙音箱</h4>
+                                                            <div class="sub-subtitle">吸盘设计</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="category-primary-item">
+                                        <a href="./list.html?cart_name=手机充电"><span
+                                                class="item-logo"><img src="./images/category-item4.png"
+                                                    alt=""></span>手机充电</a>
+                                        <span class="icon icon-arrow-right active-arrow"></span>
+                                    </div>
+                                    <div class="category-sub">
+                                        <div class="category-sub-item">
+                                            <a href="./list.html?cart_name=移动电源">
+                                                <div class="category-sub-title">
+                                                    <div class="category-sub-left"></div>
+                                                    <div class="category-sub-center">移动电源</div>
+                                                    <div class="category-sub-right"></div>
+                                                </div>
+                                            </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="./item.html?item_id=169">
+                                                        <div class="sub-img">
+                                                            <img src="./images/d1.jpg"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">努比亚 27W PD快充氘锋移动电源</h4>
+                                                            <div class="sub-subtitle">10000毫安充电宝</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="category-sub-item">
+                                            <a href="./list.html?cart_name=电源适配器">
+                                                <div class="category-sub-title">
+                                                    <div class="category-sub-left"></div>
+                                                    <div class="category-sub-center">电源适配器</div>
+                                                    <div class="category-sub-right"></div>
+                                                </div>
+                                            </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="./item.html?item_id=167">
+                                                        <div class="sub-img">
+                                                            <img src="./images/d2.jpg"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">ZTE 65W GaN(氮化镓) 超级快充</h4>
+                                                            <div class="sub-subtitle">小巧便携 快无止境</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="category-sub-item">
+                                            <a href="./list.html?cart_name=数据线">
+                                                <div class="category-sub-title">
+                                                    <div class="category-sub-left"></div>
+                                                    <div class="category-sub-center">数据线</div>
+                                                    <div class="category-sub-right"></div>
+                                                </div>
+                                            </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="./item.html?item_id=170">
+                                                        <div class="sub-img">
+                                                            <img src="./images/d3.jpg"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">Type C-C 数据线</h4>
+                                                            <div class="sub-subtitle">C-C接口 5A</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="category-primary-item">
+                                        <a href="./list.html?cart_name=手机配件"><span
+                                                class="item-logo"><img src="./images/category-item5.jpg"
+                                                    alt=""></span>手机配件</a>
+                                        <span class="icon icon-arrow-right active-arrow"></span>
+                                    </div>
+                                    <div class="category-sub">
+                                        <div class="category-sub-item">
+                                            <a href="./list.html?cart_name=保护套">
+                                                <div class="category-sub-title">
+                                                    <div class="category-sub-left"></div>
+                                                    <div class="category-sub-center">保护套</div>
+                                                    <div class="category-sub-right"></div>
+                                                </div>
+                                            </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="./item.html?item_id=11">
+                                                        <div class="sub-img">
+                                                            <img src="./images/e1.jpg"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">A10 Pro智能保护套</h4>
+                                                            <div class="sub-subtitle">原装配件、品质保证</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./item.html?item_id=63">
+                                                        <div class="sub-img">
+                                                            <img src="./images/e2.jpg"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">V9 智能皮套</h4>
+                                                            <div class="sub-subtitle">原装配件、品质保证</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="category-sub-item">
+                                            <a href="./list.html?cart_name=保护壳">
+                                                <div class="category-sub-title">
+                                                    <div class="category-sub-left"></div>
+                                                    <div class="category-sub-center">保护壳</div>
+                                                    <div class="category-sub-right"></div>
+                                                </div>
+                                            </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="./item.html?item_id=134">
+                                                        <div class="sub-img">
+                                                            <img src="./images/e3.jpg"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">Axon 20 保护壳</h4>
+                                                            <div class="sub-subtitle">艺术家联名设计</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./item.html?item_id=64">
+                                                        <div class="sub-img">
+                                                            <img src="./images/e4.jpg"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">Axon 20 保护壳</h4>
+                                                            <div class="sub-subtitle">艺术家联名设计</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="category-sub-item">
+                                            <a href="./list.html?cart_name=贴膜">
+                                                <div class="category-sub-title">
+                                                    <div class="category-sub-left"></div>
+                                                    <div class="category-sub-center">贴膜</div>
+                                                    <div class="category-sub-right"></div>
+                                                </div>
+                                            </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="./item.html?item_id=65">
+                                                        <div class="sub-img">
+                                                            <img src="./images/e5.jpg"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">天机Axon9 Pro 钢化膜</h4>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="category-sub-item">
+                                            <a href="./list.html?cart_name=存储卡">
+                                                <div class="category-sub-title">
+                                                    <div class="category-sub-left"></div>
+                                                    <div class="category-sub-center">存储卡</div>
+                                                    <div class="category-sub-right"></div>
+                                                </div>
+                                            </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="./item.html?item_id=66">
+                                                        <div class="sub-img">
+                                                            <img src="./images/e6.jpg"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">T-Flash内存卡</h4>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="category-sub-item">
+                                            <a href="./list.html?cart_name=自拍杆/支架">
+                                                <div class="category-sub-title">
+                                                    <div class="category-sub-left"></div>
+                                                    <div class="category-sub-center">自拍杆/支架</div>
+                                                    <div class="category-sub-right"></div>
+                                                </div>
+                                            </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="./item.html?item_id=77">
+                                                        <div class="sub-img">
+                                                            <img src="./images/e7.jpg"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">中兴自拍杆</h4>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="category-primary-item">
+                                        <a href="./list.html?cart_name=服务/其他"><span
+                                                class="item-logo"><img src="./images/category-item6.jpg"
+                                                    alt=""></span>服务/其他</a>
+                                        <span class="icon icon-arrow-right active-arrow"></span>
+                                    </div>
+                                    <div class="category-sub">
+                                        <div class="category-sub-item">
+                                            <a href="./list.html?cart_name=增值服务">
+                                                <div class="category-sub-title">
+                                                    <div class="category-sub-left"></div>
+                                                    <div class="category-sub-center">增值服务</div>
+                                                    <div class="category-sub-right"></div>
+                                                </div>
+                                            </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="./item.html?item_id=83">
+                                                        <div class="sub-img">
+                                                            <img src="./images/f1.jpg"
+                                                                style="width: 38px;height: 49px;">
+                                                        </div>
+                                                        <div class="sub-info">
+                                                            <h4 class="sub-name">碎屏保</h4>
+                                                            <div class="sub-subtitle">仅搭配套餐销售</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="offset-lg-3 nav-main">
+                    <div class="nav-menu">
+                        <a href="./index.html">首页</a>
+                        <a href="./list.html?cart_name=Axon系列">Axon系列</a>
+                        <a href="./list.html?cart_name=Blade系列">Blade系列</a>
+                        <a href="">线上服务站</a>
+                        <a href="#">中兴社区</a>
+                        <a href="#">线下门店</a>
+                        <a href="./login.html">会员中心</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 商品详情页 -->
+    <div class="main-item">
+    </div>
+
+    <!-- 帮助中心 -->
+    <div class="helpinfo">
+        <div class="wrap-lg">
+            <div class="feature-line"></div>
+            <div class="feature-items clearfix">
+                <div class="helpinfo-item">
+                    <div class="helpinfo-item">
+                        <div class="helpinfo-title">帮助中心</div>
+                        <ul>
+                            <li>
+                                <a href="#">购物指南</a>
+                            </li>
+                            <li>
+                                <a href="#">支付方式</a>
+                            </li>
+                            <li>
+                                <a href="#">配送指南</a>
+                            </li>
+                            <li>
+                                <a href="#">结算</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="helpinfo-item">
+                    <div class="helpinfo-item">
+                        <div class="helpinfo-title">售后服务</div>
+                        <ul>
+                            <li>
+                                <a href="#">退换货流程</a>
+                            </li>
+                            <li>
+                                <a href="#">保修政策</a>
+                            </li>
+                            <li>
+                                <a href="#">退换货政策</a>
+                            </li>
+                            <li>
+                                <a href="#">售后网点</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="helpinfo-item">
+                    <div class="helpinfo-item">
+                        <div class="helpinfo-title">关注我们</div>
+                        <ul>
+                            <li>
+                                <a href="#">官方微信</a>
+                            </li>
+                            <li>
+                                <a href="#">中兴社区</a>
+                            </li>
+                            <li>
+                                <a href="#">新浪微博</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="helpinfo-item">
+                    <div class="helpinfo-item">
+                        <div class="helpinfo-title">关于我们</div>
+                        <ul>
+                            <li>
+                                <a href="#">商城简介</a>
+                            </li>
+                            <li>
+                                <a href="#">礼品团购</a>
+                            </li>
+                            <li>
+                                <a href="#">联系我们</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="helpinfo-item">
+                    <p>
+                        <font color="#ccc" size="2">全国服务热线</font>
+                    </p>
+                    <p><strong style="font-weight: bold;">
+                            <font face="Microsoft Yahei" color="#0b5394" size="4">400-880-9999</font>
+                        </strong></p>
+                    <p>
+                        <font color="#666" size="2">周一到周日9:00～24:00(全年无休)</font>
+                    </p>
+                    <p><a href="#">
+                            <img src="./images/service.jpg" style="width: 60px;height: 60px;">
+                        </a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部导航 -->
+    <div class="footer">
+        <div class="wrap-lg">
+            <div class="footer-nav">
+                <a href="#">中兴通讯</a>
+                <span>|</span>
+                <a href="#">中兴手机</a>
+                <span>|</span>
+                <a href="#">中兴智能家居</a>
+                <span>|</span>
+                <a href="#">努比亚（Nubia）</a>
+                <span>|</span>
+                <a href="#">互联网违法举报中心</a>
+            </div>
+            <div class="back-to-top" style="display: block;">
+                <i class="icon icon-arrow-start-a" data-icon="\2817"></i>
+                <span>返回顶部</span>
+            </div>
+            <div>
+                <a href="#">服务协议</a>
+                &nbsp;|&nbsp;
+                <a href="#">隐私政策</a>
+                | ©2014 - 2020 深圳市XXXX科技有限公司版权所有，并保留所有权利
+            </div>
+            <div>
+                增值电信业务经营许可证：粤XX-XXXXXXXX | ICP备案证书号 :
+                <a href="#">粤ICP备XXXXXXXX号</a>
+                &nbsp;|&nbsp;
+                <a href="#">粤公网安备 XXXXXXXXXXXXXX号</a>
+                &nbsp;|&nbsp;
+                <a href="#">营业执照</a>
+                &nbsp;&nbsp;
+                <a href="#">
+                    <img src="./images/83.gif" style="width: 26px;height: 36px;">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- custom -->
+    <div class="layer">
+        <div id="YSF-CUSTOM-ENTRY-1" class="layer-custom">
+            <img src="https://qiyukf.nosdn.127.net/sdk/res/kefu/custom/1.png">
+        </div>
+    </div>
+
+    <script src="./js/listShow.js"></script>
+    <script src="./js/item.js"></script>
+    <script src="./js/cartNum.js"></script>
+    <script src="./js/backtop.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>

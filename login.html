@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery.js"></script>
+</head>
+
+<body class="login-panel">
+    <!-- header -->
+    <div id="header" class="header">
+        <div class="wrap-lg">
+            <div class="row clearfix">
+                <div class="col-lg-4">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="./images/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-login">
+        <div class="wrap-lg clearfix">
+            <div class="col-lg-9">
+                <img src="./images/login-img.jpg" alt="" style="width: 360px;height: 460px; margin-left: 70px;">
+            </div>
+            <div class="col-lg-6 login">
+                <form action="" method="post" class="form-login">
+                    <div class="login-header clearfix">
+                        <div class="header-key" tabid="1">会员登录</div><span
+                            class="header_tab">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                        <div class="header-key" tabid="2">短信登录</div><span
+                            class="header_tab">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                        <div class="header-key" tabid="3">员工登录</div>
+                        <span class="go-register"><a class="link-color" href="./register.html">免费注册 &gt;</a></span>
+                    </div>
+                    <div class="login-box">
+                        <div class="form-control">
+                            <ul>
+                                <li class="form-row">
+                                    <span class="form-act has-figure">
+                                        <input type="text" class="input-block action-account-check input-account" name="account"
+                                            placeholder="会员帐号" required="" autofocus="autofocus">
+                                        <i class="icon-user input-figure"></i>
+                                    </span>
+                                </li>
+                                <li class="form-row">
+                                    <span class="form-act has-figure">
+                                        <input type="password" class="input-block input-pass" name="password" id=""
+                                            placeholder="填写密码" required="">
+                                        <i class="icon-lock input-figure"></i>
+                                    </span>
+                                </li>
+                                <li class="form-row form-row-text">
+                                    <div class="forget-or-signin">
+                                        <a class="link-color" href="">忘记密码？</a>
+                                    </div>
+                                </li>
+                                <li class="form-row">
+                                    <button type="submit"
+                                        class="btn btn-import btn-block btn-login"><span><span>登录</span></span></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+                <div class="trust-login">
+                    <div class="trust-login-default">
+                        <a class="trust-login-btn" title="新浪微博"
+                            href="https://api.weibo.com/oauth2/authorize?response_type=code&amp;client_id=1658487452&amp;redirect_uri=https%3A%2F%2Fwww.ztemall.com%2Ftrustlogin-bind.html%3Fflag%3Dweibo&amp;display=default&amp;state=b3364f393b7b877bb0d8a907eab86cff"><img
+                                src="https://res.ztemall.com/app/sysuser/statics/images/login/weibo.png" alt=""
+                                width="30" height="30"></a>
+                        <a class="trust-login-btn" title="QQ登陆"
+                            href="https://graph.qq.com/oauth2.0/authorize?response_type=code&amp;client_id=101868175&amp;redirect_uri=https%3A%2F%2Fwww.ztemall.com%2Ftrustlogin-bind.html%3Fflag%3Dqq&amp;state=b3364f393b7b877bb0d8a907eab86cff"><img
+                                src="https://res.ztemall.com/app/sysuser/statics/images/login/qq.png" alt="" width="30"
+                                height="30"></a>
+                        <a class="trust-login-btn" title="微信登陆"
+                            href="https://open.weixin.qq.com/connect/qrconnect?appid=wx8e418623934058ca&amp;redirect_uri=https%3A%2F%2Fwww.ztemall.com%2Ftrustlogin-bind.html%3Fflag%3Dweixin&amp;response_type=code&amp;scope=snsapi_login&amp;state=b3364f393b7b877bb0d8a907eab86cff"><img
+                                src="https://res.ztemall.com/app/sysuser/statics/images/login/weixin.png" alt=""
+                                width="30" height="30"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div style="text-align: center;"><a href="#" type="url"
+                title="服务协议" target="_blank">服务协议</a>&nbsp;|<a
+                href="#" type="url" title="隐私政策">隐私政策</a>| ©2014 -
+            2020 深圳市XXXX科技有限公司版权所有，并保留所有权利&nbsp;</div>
+    </div>
+
+    <script src="./js/cookie.js"></script>
+    <script src="./js/login.js"></script>
+
+</body>
+
+</html>
